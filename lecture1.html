@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 1 (Intro to CSS and Selectors)</title>
+
+    <!-- Internal CSS/ Embedded CSS -->
+    <style>
+      /* p {
+        color: blue;
+        font-size: 24px;
+      } */
+    </style>
+
+    <link rel="stylesheet" href="./css/lecture1.css" />
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <p>The CSS of this content will be applied using Inline CSS</p>
+
+    <!-- Selectors -->
+    <!-- 1. Element Selector -->
+    <h2>The CSS of this content will be applied using Element Selector</h2>
+
+    <!-- 2. Class Selector -->
+    <h2 class="orange red-background">
+      The CSS of this content will be applied using Class Selector
+    </h2>
+
+    <!-- 3. ID Selector -->
+    <section id="about">
+      The CSS of this content will be applied using ID Selector
+    </section>
+
+    <!-- 4. Descendant Selector -->
+    <a href="">Read our blog!</a>
+
+    <ul class="social-links">
+      <li>
+        <a href="">Twitter</a>
+      </li>
+      <li>
+        <ol>
+          <li><a href="">Products</a></li>
+        </ol>
+        <a href="">Instagram</a>
+      </li>
+      <li>
+        <a href="">Facebook</a>
+      </li>
+    </ul>
+
+    <!-- 5. Child Selector -->
+    <ul class="menu">
+      <li>
+        Computers and accessories
+        <ul class="submenu">
+          <li>Processors</li>
+          <li>Monitors</li>
+          <li>Video cards</li>
+        </ul>
+      </li>
+      <li>
+        Appliances
+        <ul class="submenu">
+          <li>Refrigerators</li>
+          <li>TV sets</li>
+          <li>Washing machines</li>
+        </ul>
+      </li>
+      <li>
+        Household products
+        <ul class="submenu">
+          <li>Armchairs</li>
+          <li>Mattresses</li>
+          <li>Electric fireplaces</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- 6. Attribute Selector -->
+    <a href="https://htmlreference.io" title="Tag book"> htmlreference.io </a>
+
+    <a href="https://cssreference.io" title="Style guide"> cssreference.io </a>
+
+    <a href="https://www.youtube.com">YouTube </a>
+
+    <!-- 7. Attribute Selector with Value -->
+    <br />
+    <br />
+    <a href="https://htmlreference.io" title="Tag book"> htmlreference.io </a>
+
+    <a href="https://cssreference.io" title="Style guide"> cssreference.io </a>
+
+    <a href="https://www.youtube.com">YouTube</a>
+  </body>
+</html>
