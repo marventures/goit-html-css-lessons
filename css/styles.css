@@ -1,0 +1,400 @@
+/* CSS Variables */
+:root {
+  --primary-text-color: #555555;
+  --primary-white-color: #ffffff;
+  --primary-orange-color: #ff6c00;
+  --primary-black-color: #303030;
+  --primary-gray-color: #9da4bd;
+  --toptext-gray-color: rgba(157, 164, 189, 0.6);
+  --primary-background-color: rgba(25, 28, 38, 0.2);
+  --secondary-background-color: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* General Styles */
+
+/* remove bullet points in lists */
+.list {
+  list-style: none;
+}
+
+/* remove bullet points in lists */
+.link {
+  text-decoration: none;
+}
+
+/* top text */
+.top-text {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+/* 1. button - doesn't automatically inherit font-family*/
+.button {
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+/* END OF GENERAL STYLES */
+
+/* HEADER SECTION */
+.header {
+  background-color: var(--primary-background-color);
+}
+
+.header-navigation {
+}
+
+.header-logo {
+}
+
+.header-list {
+}
+
+.header-item {
+}
+
+.header-link {
+  color: var(--primary-white-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--primary-orange-color);
+}
+
+.header-address {
+  color: var(--primary-white-color);
+}
+
+.header-address-link {
+  /* 2. a tags doesn't inherit font-color */
+  color: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.header-button {
+  color: var(--primary-white-color);
+  background-color: transparent;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: var(--primary-background-color);
+}
+
+.hero-list {
+}
+
+.hero-item {
+}
+
+.hero-link {
+  color: var(--primary-black-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--primary-orange-color);
+}
+
+.hero-top-text {
+  color: var(--toptext-gray-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-family: "Raleway";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+
+.hero-bottom-text {
+  color: var(--primary-gray-color);
+}
+
+/* ABOUT SECTION */
+
+.about {
+  background-color: var(--primary-white-color);
+}
+
+.about-list {
+}
+
+.about-item {
+}
+
+.about-top-text {
+  color: var(--primary-black-color);
+}
+
+.about-title {
+  color: var(--primary-black-color);
+}
+
+.about-bottom-text {
+  color: var(--primary-text-color);
+}
+
+.about-text {
+  color: var(--primary-black-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.28px;
+}
+
+.about-button {
+  color: var(--primary-black-color);
+}
+
+/* SERVICES AND PRICES SECTION */
+
+.prices {
+  background-color: var(--primary-background-color);
+}
+.prices-top-text {
+  color: var(--toptext-gray-color);
+}
+
+.prices-title {
+  color: var(--primary-white-color);
+}
+
+.prices-list {
+}
+
+.prices-item {
+}
+
+.prices-item-text {
+  color: var(--primary-gray-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+
+.prices-button {
+  color: var(--primary-white-color);
+  background-color: transparent;
+}
+
+/* ------- WHY-US/ BENEFITS SECTION ------ */
+.benefits {
+  background-color: var(--primary-white-color);
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+}
+
+.benefits-item-count {
+  color: var(--primary-black-color);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.benefits-item-text {
+  color: var(--primary-black-color);
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.benefit-top-text {
+  color: var(--primary-black-color);
+}
+
+.benefits-title {
+  color: var(--primary-black-color);
+}
+
+.benefits-bottom-text {
+  color: var(--primary-text-color);
+}
+
+/*  BARBERS SECTION */
+
+.barbers {
+  background-color: var(--secondary-background-color);
+}
+
+.barbers-top-text {
+  color: var(--primary-black-color);
+}
+
+.barbers-title {
+  color: var(--primary-black-color);
+}
+
+.barbers-list {
+}
+
+.barbers-item-title {
+  color: var(--primary-black-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.barbers-item-text {
+  color: var(--primary-orange-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+/* PORTFOLIO SECTION  */
+
+.portfolio {
+  background-color: var(--primary-white-color);
+}
+
+.portfolio-top-text {
+  color: var(--primary-black-color);
+}
+
+.portfolio-list {
+}
+
+.portfolio-item {
+}
+
+/* ---------- BOOKING SECTION ---------- */
+
+.booking {
+  background-color: #191c26;
+}
+
+.booking-title {
+  color: var(--primary-white-color);
+}
+
+/* --------- CONTACTS SECTION --------- */
+.contacts {
+  background-color: var(--primary-black-color);
+}
+
+.contacts-title {
+  color: var(--primary-white-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+}
+
+.contacts-link {
+  color: var(--primary-gray-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+}
+
+.contacts-top-text {
+  color: var(--primary-white-color);
+}
+
+.contacts-bottom-text {
+  color: var(--primary-gray-color);
+}
+
+/* ------------- FOOTER ------------- */
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-copyright {
+  color: var(--primary-gray-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-link {
+  color: var(--primary-black-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
