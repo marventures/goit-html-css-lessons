@@ -21,7 +21,7 @@ body {
   list-style: none;
 }
 
-/* remove bullet points in lists */
+/* remove underline in links */
 .link {
   text-decoration: none;
 }
