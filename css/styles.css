@@ -62,6 +62,7 @@ body {
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* END OF GENERAL STYLES */
