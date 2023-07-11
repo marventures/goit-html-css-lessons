@@ -25,6 +25,7 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom
 
 /* BORDER-BOX - standard box model */
 /* the width and height properties set the final dimensions of the element */
+/* padding and border doesn't affect the dimensions of the element*/
 
 /* width = width */
 /* width = height */
