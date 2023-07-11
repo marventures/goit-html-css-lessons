@@ -28,7 +28,7 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom
 /* padding and border doesn't affect the dimensions of the element*/
 
 /* width = width */
-/* width = height */
+/* height = height */
 .box2 {
   width: 150px;
   height: 150px;
