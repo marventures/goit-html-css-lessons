@@ -10,11 +10,55 @@
   --secondary-background-color: #f7f7f7;
 }
 
+/* CSS RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+/* END OF CSS RESET */
+
 body {
   font-family: "Open Sans", sans-serif;
 }
 
 /* General Styles */
+
+.container {
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* remove bullet points in lists */
 .list {
@@ -28,6 +72,8 @@ body {
 
 /* top text */
 .top-text {
+  margin-bottom: 20px;
+
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -37,6 +83,8 @@ body {
 }
 
 .bottom-text {
+  margin-bottom: 20px;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -45,6 +93,8 @@ body {
 }
 
 .section-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   font-style: normal;
@@ -55,6 +105,10 @@ body {
 
 /* 1. button - doesn't automatically inherit font-family*/
 .button {
+  border: 1px solid var(--primary-orange-color);
+  border-radius: 25px;
+  padding: 5px 10px;
+
   font-family: inherit;
   font-size: 12px;
   font-style: normal;

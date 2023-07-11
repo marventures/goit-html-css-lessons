@@ -1,0 +1,77 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  /* 1 Value: ALL SIDES */
+  /* padding: 20px; */
+
+  /* 2 Value:TOP-BOTTOM LEFT-RIGHT */
+  /* padding: 35px 50px; */
+
+  /* 3 Value: TOP LEFT-RIGHT BOTTOM*/
+  /* padding: 150px 250px 100px; */
+
+  /* 4 Value: TOP RIGHT BOTTOM LEFT */
+  /* padding: 100px 250px 100px 50px; */
+
+  /* SEPARATE VALUES */
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 70px;
+  padding-left: 60px;
+
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+
+  /* border-width: 2px; */
+  /* border-style: dashed; */
+  /* border-color: #2a2a2a; */
+}
+
+.post-thumb {
+  margin-bottom: 30px;
+  border: 2px dashed tomato;
+}
+
+.post-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  border: 2px dashed teal;
+}
+
+/* 2. Vertical Margin Collapse */
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top {
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+.bottom {
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* 3. Vertical margin of a nested box */
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-top: 100px;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+  background-color: yellow;
+}

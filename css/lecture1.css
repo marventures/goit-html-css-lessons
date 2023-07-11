@@ -1,0 +1,49 @@
+/* Default: content-box 
+width and height properties do not set the overall size of an element, but only the height and width of its content.
+*/
+
+/* 
+Width = width + padding-left + padding-right + border-left + border-right
+Height = height + padding-top + padding-bottom + border-top + border-bottom 
+*/
+
+/* width = 150 + 30 + 30 + 5 + 5*/
+/* height = 150 + 30 + 30 + 5 + 5*/
+
+/* width = 220 */
+/* height = 220 */
+
+.box1 {
+  width: 150px;
+  height: 150px;
+
+  border: 5px solid #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+}
+
+/* BORDER-BOX - standard box model */
+/* the width and height properties set the final dimensions of the element */
+
+/* width = width */
+/* width = height */
+.box2 {
+  width: 150px;
+  height: 150px;
+
+  border: 5px solid #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+}
+
+.box3 {
+  width: 300px;
+  height: 450px;
+
+  border: 5px solid #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+}
