@@ -44,7 +44,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .visually-hidden {
@@ -58,6 +58,11 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* remove bullet points in lists */
@@ -123,16 +128,27 @@ body {
 
 /* HEADER SECTION */
 .header {
+  padding-top: 32px;
   background-color: var(--primary-background-color);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
+  margin-right: 130px;
 }
 
 .header-list {
+  display: flex;
+  gap: 30px;
 }
 
 .header-item {
@@ -153,6 +169,7 @@ body {
 }
 
 .header-address {
+  margin-left: auto;
   color: var(--primary-white-color);
 }
 
@@ -168,6 +185,8 @@ body {
 }
 
 .header-button {
+  margin-left: 40px;
+
   color: var(--primary-white-color);
   background-color: transparent;
 }
@@ -175,6 +194,15 @@ body {
 /* HERO SECTION */
 .hero {
   background-color: var(--primary-background-color);
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-wrap {
+  flex-grow: 1;
+  padding: 272px 100px 208px;
 }
 
 .hero-list {
@@ -221,7 +249,19 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
 .about-list {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.about-wrap {
+  padding-right: 100px;
 }
 
 .about-item {
@@ -265,10 +305,25 @@ body {
   color: var(--primary-white-color);
 }
 
+.prices-wrap {
+  display: flex;
+}
+
 .prices-list {
+  border: 1px solid var(white);
+  padding: 30px 20px;
+  /* 100% = full width; 30px = spacing ; /2 = means it will be half */
+  width: calc((100% - 30px) / 2);
 }
 
 .prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -281,6 +336,8 @@ body {
 }
 
 .prices-button {
+  display: block;
+  margin: 0 auto;
   color: var(--primary-white-color);
   background-color: transparent;
 }
@@ -290,10 +347,22 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.benefits-container {
+  display: flex;
+  padding-left: 85px;
+  gap: 130px;
+}
+
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
 }
 
 .benefits-item-count {
@@ -341,9 +410,16 @@ body {
 }
 
 .barbers-list {
+  display: flex;
+}
+
+.barbers-item {
+  width: calc(100% - 60px / 3);
 }
 
 .barbers-item-title {
+  margin-top: 30px;
+  margin-bottom: 8px;
   color: var(--primary-black-color);
   text-align: center;
   font-size: 18px;
@@ -354,6 +430,7 @@ body {
 }
 
 .barbers-item-text {
+  margin-bottom: 30px;
   color: var(--primary-orange-color);
   text-align: center;
   font-size: 14px;
@@ -374,9 +451,21 @@ body {
 }
 
 .portfolio-list {
+  display: flex;
 }
 
 .portfolio-item {
+  width: calc(100% - 90px / 4);
+}
+
+/* CONTACTS WRAP */
+.contacts-wrap {
+  background-color: #191c26;
+  /* margin: 0 auto; */
+}
+
+.contacts-wrap-container {
+  display: flex;
 }
 
 /* ---------- BOOKING SECTION ---------- */
@@ -426,8 +515,16 @@ body {
 }
 
 /* ------------- FOOTER ------------- */
+
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-copyright {
@@ -440,6 +537,8 @@ body {
 }
 
 .footer-list {
+  display: flex;
+  gap: 30px;
 }
 
 .footer-item {
