@@ -1,25 +1,15 @@
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+.thumb {
+  height: 400px;
+  width: 300px;
+
+  border: 1px solid red;
 }
 
-.menu {
-  display: flex;
-  /* Flex direction:  arranging items in one specific direction, horizontally or vertically */
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
 
-  /* flex-direction: row; */
-  /* flex-direction: row-reverse; */
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
-
-  /* Justify content:  controls the aligining of items on the main axis */
-
-  /* justify-content: flex-start; */
-  /* justify-content: flex-end; */
-  /* justify-content: center; */
-  justify-content: space-between;
-  /* justify-content: space-around; */
-  /* justify-content: space-evenly; */
+  object-fit: contain;
+  object-position: 100px 50px;
 }

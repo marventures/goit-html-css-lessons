@@ -85,8 +85,21 @@ body {
   line-height: normal;
   letter-spacing: 1.1px;
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
+.top-text::before {
+  /* without content, it will not be created*/
+  content: "";
+  width: 60px;
+  height: 1px;
+  /* The currentColor value is a special keyword in CSS that refers to the value of the color property of an element. It allows you to dynamically apply the same color used in the color property to other properties such as background-color, border-color, or fill */
+  /* background-color: currentColor; */
+  background-color: currentColor;
+}
 .bottom-text {
   margin-bottom: 20px;
 
@@ -193,7 +206,6 @@ body {
 
 /* HERO SECTION */
 .hero {
-  background-color: var(--primary-background-color);
 }
 
 .hero-container {
@@ -203,6 +215,12 @@ body {
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 100px 208px;
+
+  background-image: url(../images/hero-bg.jpg),
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-list {
@@ -295,7 +313,13 @@ body {
 /* SERVICES AND PRICES SECTION */
 
 .prices {
-  background-color: var(--primary-background-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url(../images/prices-bg.png),
+    linear-gradient(#111319, #111319);
+  background-repeat: norepeat;
+  background-position: center;
+  background-size: cover;
 }
 .prices-top-text {
   color: var(--toptext-gray-color);
@@ -307,19 +331,45 @@ body {
 
 .prices-wrap {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .prices-list {
-  border: 1px solid var(white);
   padding: 30px 20px;
   /* 100% = full width; 30px = spacing ; /2 = means it will be half */
   width: calc((100% - 30px) / 2);
+}
+
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .prices-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
 }
 
 .prices-item:last-child {
@@ -333,6 +383,11 @@ body {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.36px;
+}
+
+.prices-item-text:last-child {
+  /* it will be displayed after any elements with a lower order value */
+  order: 1;
 }
 
 .prices-button {
@@ -363,15 +418,37 @@ body {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
+  background-color: var(--secondary-background-color);
+
+  /* box-shadow: m<x-offset> m<y-offset> <blur> <spread> <color> */
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .benefits-item-count {
+  display: block;
+  text-align: center;
   color: var(--primary-black-color);
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.1px;
+}
+
+.benefits-item-count::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: top;
+  color: var(--primary-orange-color);
 }
 
 .benefits-item-text {
@@ -381,6 +458,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
 
 .benefit-top-text {
@@ -460,27 +538,24 @@ body {
 
 /* CONTACTS WRAP */
 .contacts-wrap {
+  margin: 0 auto;
+  max-width: 1600px;
   background-color: #191c26;
-  /* margin: 0 auto; */
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: calc(50% - 15px) 100%;
+  background-position: right;
 }
 
 .contacts-wrap-container {
   display: flex;
-}
-
-/* ---------- BOOKING SECTION ---------- */
-
-.booking {
-  background-color: #191c26;
-}
-
-.booking-title {
-  color: var(--primary-white-color);
+  justify-content: space-between;
 }
 
 /* --------- CONTACTS SECTION --------- */
 .contacts {
   background-color: var(--primary-black-color);
+  width: calc(50% - 15px);
 }
 
 .contacts-title {
