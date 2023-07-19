@@ -565,6 +565,7 @@ body {
 /* --------- CONTACTS SECTION --------- */
 .contacts {
   width: calc(50% - 15px);
+  padding-left: 100px;
 }
 
 .contacts-title {
