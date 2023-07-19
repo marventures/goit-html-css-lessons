@@ -551,9 +551,19 @@ body {
   justify-content: space-between;
 }
 
+/* ---------- BOOKING SECTION ---------- */
+
+.booking {
+  background-color: #191c26;
+  width: calc(50% - 15px);
+}
+
+.booking-title {
+  color: var(--primary-white-color);
+}
+
 /* --------- CONTACTS SECTION --------- */
 .contacts {
-  background-color: var(--primary-black-color);
   width: calc(50% - 15px);
 }
 
