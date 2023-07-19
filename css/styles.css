@@ -317,7 +317,7 @@ body {
   margin: 0 auto;
   background-image: url(../images/prices-bg.png),
     linear-gradient(#111319, #111319);
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
