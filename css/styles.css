@@ -517,6 +517,39 @@ body {
   letter-spacing: 0.28px;
 }
 
+.barbers-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary-black-color);
+  background-color: var(--primary-white-color);
+}
+
+.barbers-social-icon {
+  fill: currentColor;
+}
+
+.barbers-social-link:hover,
+.barbers-social-link:focus {
+  background-color: var(--primary-orange-color);
+}
+
 /* PORTFOLIO SECTION  */
 
 .portfolio {
@@ -584,6 +617,10 @@ body {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--primary-gray-color);
   font-size: 18px;
   font-style: normal;
@@ -592,12 +629,53 @@ body {
   letter-spacing: 0.36px;
 }
 
+.contacts-icon {
+  fill: none;
+  stroke: currentColor;
+}
+
 .contacts-top-text {
   color: var(--primary-white-color);
 }
 
 .contacts-bottom-text {
   color: var(--primary-gray-color);
+}
+
+/* TEST SECTION */
+.test-list {
+  display: flex;
+  gap: 30px;
+}
+
+.test-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.test-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #8e8f99;
+}
+
+.test-icon {
+  width: 100px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.test-link:hover,
+.test-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 /* ------------- FOOTER ------------- */

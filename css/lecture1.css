@@ -1,15 +1,24 @@
-.thumb {
-  height: 400px;
-  width: 300px;
-
-  border: 1px solid red;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.thumb > img {
-  display: block;
-  height: 100%;
-  width: 100%;
+.icon-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  object-fit: contain;
-  object-position: 100px 50px;
+.icon {
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  fill: #2a2a2a;
+}
+
+.icon:hover {
+  fill: #03a9f4;
 }
