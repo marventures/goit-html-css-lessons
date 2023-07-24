@@ -40,7 +40,7 @@ body {
 /* General Styles */
 
 .container {
-  width: 1280px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -220,7 +220,7 @@ body {
 }
 
 .hero-socials {
-  width: 155px;
+  width: 100px;
   display: flex;
   align-items: flex-end;
   padding-left: 27px;
@@ -503,6 +503,7 @@ body {
 
 .barbers-list {
   display: flex;
+  gap: 30px;
 }
 
 .barbers-item {
