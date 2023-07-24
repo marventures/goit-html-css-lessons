@@ -135,6 +135,8 @@ body {
   letter-spacing: 1.08px;
   text-transform: uppercase;
   cursor: pointer;
+
+  background-color: transparent;
 }
 
 .button:hover,
@@ -207,7 +209,6 @@ body {
   margin-left: 40px;
 
   color: var(--primary-white-color);
-  background-color: transparent;
 }
 
 /* HERO SECTION */
@@ -401,7 +402,6 @@ body {
   display: block;
   margin: 0 auto;
   color: var(--primary-white-color);
-  background-color: transparent;
 }
 
 /* ------- WHY-US/ BENEFITS SECTION ------ */
