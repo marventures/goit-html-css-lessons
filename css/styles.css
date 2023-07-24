@@ -137,6 +137,12 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--primary-orange-color);
+}
+
 /* END OF GENERAL STYLES */
 
 /* HEADER SECTION */
@@ -304,6 +310,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.28px;
+  margin-bottom: 20px;
 }
 
 .about-button {
