@@ -207,6 +207,7 @@ body {
 
 .header-button {
   margin-left: 40px;
+  margin-right: 40px;
 
   color: var(--primary-white-color);
 }
