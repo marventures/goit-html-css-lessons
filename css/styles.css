@@ -150,7 +150,9 @@ body {
 /* HEADER SECTION */
 .header {
   padding-top: 32px;
-  background-color: var(--primary-background-color);
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .header-container {
@@ -214,6 +216,11 @@ body {
 
 /* HERO SECTION */
 .hero {
+  /* background-image: url(../images/hero-bg.jpg),
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 72% 100%; */
 }
 
 .hero-container {
@@ -511,6 +518,28 @@ body {
   width: calc(100% - 60px / 3);
 }
 
+.barbers-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-cover-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  font-size: 18px;
+  color: var(--primary-white-color);
+  background-color: var(--primary-orange-color);
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.barbers-item:hover .barbers-cover-text {
+  transform: translateY(0);
+}
+
 .barbers-item-title {
   margin-top: 30px;
   margin-bottom: 8px;
@@ -637,6 +666,7 @@ body {
 .contacts-item:last-child {
   margin-bottom: 0;
   text-decoration: underline;
+  /* text-underline-offset: 25px; */
   color: var(--primary-gray-color);
 }
 

@@ -1,24 +1,82 @@
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* LEC 1 */
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+
+  /* 1. position static */
+  /* position: static; */
+
+  /* 2. positioned elements */
+  /* a. position:relative */
+  /* position: relative;
+  top: 30px;
+  left: 30px; */
+
+  /* b. position:absolute*/
+  /* position: absolute;
+  top: 30px;
+  left: 30px; */
+
+  /* c. position:fixed */
+  position: fixed;
+  top: 30px;
+  left: 30px;
 }
 
-.icon-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+nav {
+  background-color: #e0e0e0;
+  padding: 10px;
+
+  /* d. position: sticky */
+  /* position: sticky;
+  top: 0; */
 }
 
-.icon {
-  border: 2px dashed #2a2a2a;
-  border-radius: 8px;
-  fill: #2a2a2a;
+main {
+  padding: 20px;
 }
 
-.icon:hover {
-  fill: #03a9f4;
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* LEC 2 */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: relative;
+
+  /* Using margin:150px will shift the neigboring element */
+  /* margin: 150px; */
+
+  /* Using top:150px can overlap the neighboring element*/
+  top: 150px;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+/* lec 3 */
+.parent {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: lightblue;
+}
+
+/* Styling the absolutely positioned child element */
+.child {
+  /* this element will start counting down from it's RELATIVE parent */
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  top: 50px;
 }
