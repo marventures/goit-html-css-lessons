@@ -783,3 +783,7 @@ body {
   line-height: normal;
   letter-spacing: 2.2px;
 }
+
+.footer-link:hover {
+  color: var(--primary-orange-color);
+}
