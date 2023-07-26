@@ -207,6 +207,11 @@ body {
   text-transform: uppercase;
 }
 
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--primary-orange-color);
+}
+
 .header-button {
   margin-left: 40px;
   margin-right: 40px;
