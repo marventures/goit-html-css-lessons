@@ -11,6 +11,15 @@
       rel="stylesheet"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- CSS Normalizer -->
     <link
       rel="stylesheet"
@@ -32,10 +41,12 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="#about">About</a>
+              <a class="header-link current link" href="./index.html">About</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="#prices">Services and Prices</a>
+              <a class="header-link link" href="./portfolio.html"
+                >Services and Prices</a
+              >
             </li>
             <li class="header-item">
               <a class="header-link link" href="#barbers">Barbers</a>
@@ -51,7 +62,7 @@
             >+38 044 111 11 11</a
           >
         </address>
-        <button class="header-button button" type="button">
+        <button class="header-button button" type="button" data-modal-open>
           Book a Service
         </button>
       </div>
@@ -87,7 +98,9 @@
 
           <div class="hero-wrap">
             <p class="hero-top-text top-text">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__heartBeat">
+              BarberShop
+            </h1>
             <p class="hero-bottom-text bottom-text">
               We are experts in trendy men's haircuts.
               <br />
@@ -121,7 +134,7 @@
 
           <div class="about-wrap">
             <p class="about-top-text top-text">about</p>
-            <h2 class="about-title section-title">
+            <h2 class="about-title section-title" data-aos="fade-up">
               The Best Barbershop in Your City
             </h2>
             <p class="about-bottom-text bottom-text">
@@ -153,7 +166,9 @@
           <p class="prices-top-text top-text">
             Spend time in the company of the best craftsmen
           </p>
-          <h2 class="prices-title section-title">Services and Prices</h2>
+          <h2 class="prices-title section-title" data-aos="fade-down">
+            Services and Prices
+          </h2>
 
           <div class="prices-wrap">
             <ul class="prices-list list">
@@ -228,7 +243,7 @@
 
           <div>
             <p class="benefits-top-text top-text">Old School</p>
-            <h2 class="benefits-title section-title">
+            <h2 class="benefits-title section-title" data-aos="flip-left">
               Why do they come to us?
             </h2>
             <p class="benefits-bottom-text bottom-text">
@@ -245,7 +260,9 @@
           <p class="barbers-top-text top-text">
             for true connoisseurs of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our Barbers</h2>
+          <h2 class="barbers-title section-title" data-aos="flip-up">
+            Our Barbers
+          </h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
               <div class="barbers-cover-wrap">
@@ -511,12 +528,16 @@
         <div class="container contacts-wrap-container">
           <!-- Booking Section -->
           <section class="booking">
-            <h2 class="booking-title section-title">Book A Service</h2>
+            <h2 class="booking-title section-title" data-aos="zoom-in">
+              Book A Service
+            </h2>
           </section>
 
           <!-- Contacts Section -->
           <section class="contacts" id="contacts">
-            <h2 class="contacts-title section-title">Contacts</h2>
+            <h2 class="contacts-title section-title" data-aos="zoom-out">
+              Contacts
+            </h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
                 <li class="contacts-item">
@@ -640,5 +661,27 @@
         </ul>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- AOS SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- MODAL SCRIPT -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
