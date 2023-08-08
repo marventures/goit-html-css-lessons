@@ -670,6 +670,50 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form name="modal-form">
+          <!-- Name -->
+          <label class="form-field">
+            <span class="form-label">Name</span>
+            <input class="form-input" type="text" name="user-name" />
+            <!-- svg  here-->
+          </label>
+
+          <!-- Phone -->
+          <label class="form-field">
+            <span class="form-label">Phone</span>
+            <input class="form-input" type="tel" name="user-phone" />
+          </label>
+
+          <!-- Email -->
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input class="form-input" type="email" name="user-email" />
+          </label>
+
+          <!-- Comment -->
+          <label class="form-field">
+            <span class="form-label">Comment</span>
+            <textarea
+              class="form-textarea"
+              name="user-feedback"
+              placeholder="Text input"
+              rows="8"
+            ></textarea>
+          </label>
+
+          <!-- Terms and Privacy Policy -->
+          <label class="form-agreement">
+            <input class="form-checkbox" type="checkbox" name="user-terms" />
+            <span
+              >I accept the terms and conditions of the
+              <a class="form-terms" href="">Privacy Policy</a></span
+            >
+          </label>
+
+          <!-- Form Button -->
+          <button class="button button-center" type="submit">Send</button>
+        </form>
       </div>
     </div>
 

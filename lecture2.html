@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 2 input elements</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+
+      form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        padding: 4px;
+        font-family: inherit;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <!-- Text Input -->
+      <label>
+        Text
+        <input type="text" name="text" />
+      </label>
+
+      <!-- Email Input -->
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <!-- Password Input -->
+      <label>
+        Password
+        <input type="password" name="pwd" minlength="5" maxlength="12" />
+      </label>
+
+      <!-- Telephone -->
+      <label>
+        Phone number
+        <input type="tel" name="phone" />
+      </label>
+      <button type="submit">Register</button>
+
+      <!-- Numbers -->
+      <label>
+        Age
+        <input type="number" name="age" min="18" max="30" />
+      </label>
+
+      <!-- Range Input -->
+
+      <label>
+        Interest rate:
+        <input
+          type="range"
+          name="interest_rate"
+          value="40"
+          min="0"
+          max="100"
+          step="20"
+        />
+    </form>
+  </body>
+</html>

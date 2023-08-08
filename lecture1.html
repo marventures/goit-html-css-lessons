@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 1 Label</title>
+  </head>
+  <body>
+    <form>
+      <!-- 1st approach -->
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <!-- 2nd approach -->
+      <label for="user_email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="user_email"
+        autofocus
+        placeholder="email@mail.com"
+      />
+    </form>
+  </body>
+</html>
