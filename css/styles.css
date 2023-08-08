@@ -926,7 +926,7 @@ body {
   position: absolute;
   top: -16px;
   font-size: 12px;
-  line-height: 0.87px;
+  line-height: 0.87;
   letter-spacing: 0.01em;
 }
 
@@ -939,33 +939,42 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  line-height: 0.87px;
+  /* line-height: .87px -> this was the error on live lecture = it should be without px (.87) ; and we will not set the height on .form-textarea */
+  line-height: 0.87;
   letter-spacing: 0.01em;
-
   color: var(--primary-black-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-input:hover,
-.form-input:focus,
-.form-textarea:hover,
-.form-textarea:focus {
-  outline: none;
-  border-color: var(--primary-orange-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
   padding-left: 16px;
-  height: 120px;
   resize: none;
+}
+
+.form-input:hover,
+.form-textarea:hover,
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-orange-color);
 }
 
 .form-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-agreement {
+}
+
+.form-checkbox {
+}
+
+.form-terms {
+}
+
 .button-center {
   display: block;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: auto;
+  margin-top: 24px;
 }
