@@ -932,6 +932,8 @@ body {
 
 .form-input,
 .form-textarea {
+  /* display:block -> for icon positioning */
+  display: block;
   width: 100%;
   /* margin: 0 0 29px 0; */
   margin-bottom: 29px;
