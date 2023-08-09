@@ -969,14 +969,10 @@ body {
 .form-agreement {
 }
 
-.form-checkbox {
-}
-
 .form-terms {
 }
 
 .button-center {
   display: block;
   margin: auto;
-  margin-top: 24px;
 }
