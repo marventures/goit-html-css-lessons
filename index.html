@@ -531,6 +531,49 @@
             <h2 class="booking-title section-title" data-aos="zoom-in">
               Book A Service
             </h2>
+
+            <!-- Booking Form -->
+            <form name="booking-form">
+              <div class="booking-wrap">
+                <!-- Name -->
+                <label class="booking-field">
+                  <input
+                    class="booking-input"
+                    type="text"
+                    name="booking-name"
+                    placeholder="John Doe"
+                    required
+                  />
+                  <span class="booking-label">Name*</span>
+                </label>
+
+                <!-- Phone -->
+                <label class="booking-field">
+                  <input
+                    class="booking-input"
+                    type="tel"
+                    name="booking-name"
+                    placeholder="09-123-456-789"
+                    required
+                    pattern="^(09|\+639)\d{9}$"
+                  />
+                  <span class="booking-label">Phone*</span>
+                </label>
+              </div>
+
+              <!-- Message -->
+              <label class="booking-field">
+                <textarea
+                  class="booking-textarea"
+                  name="booking-message"
+                  rows="8"
+                  placeholder="What's on your thoughts?"
+                ></textarea>
+                <span class="booking-label">Message</span>
+              </label>
+
+              <button class="button booking-button" type="submit">Send</button>
+            </form>
           </section>
 
           <!-- Contacts Section -->
@@ -675,20 +718,28 @@
           <!-- Name -->
           <label class="form-field">
             <span class="form-label">Name</span>
-            <input class="form-input" type="text" name="user-name" />
-            <!-- svg  here-->
+            <input class="form-input" type="text" name="user-name" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
           </label>
 
           <!-- Phone -->
           <label class="form-field">
             <span class="form-label">Phone</span>
-            <input class="form-input" type="tel" name="user-phone" />
+            <input class="form-input" type="tel" name="user-phone" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </label>
 
           <!-- Email -->
           <label class="form-field">
             <span class="form-label">Email</span>
-            <input class="form-input" type="email" name="user-email" />
+            <input class="form-input" type="email" name="user-email" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
           </label>
 
           <!--  Comments -->
@@ -704,7 +755,15 @@
 
           <!-- Terms and Privacy Policy -->
           <label class="form-agreement">
-            <input class="form-checkbox" type="checkbox" name="user-terms" />
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-terms"
+              checked
+            />
+            <svg class="form-checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
             <span
               >I accept the terms and conditions of the
               <a class="form-terms" href="">Privacy Policy</a></span

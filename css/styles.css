@@ -697,6 +697,68 @@ body {
   margin-bottom: 40px;
 }
 
+.booking-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.booking-input,
+.booking-textarea {
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  color: var(--primary-white-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-input {
+  width: 270px;
+  height: 24px;
+}
+
+.booking-label {
+  position: absolute;
+  top: -10px;
+  color: var(--primary-gray-color);
+  font-weight: 600px;
+  font-size: 11px;
+  line-height: 0.87;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-input:not(:placeholder-shown) + .booking-label,
+.booking-input:focus + .booking-label,
+.booking-textarea:not(:placeholder-shown) + .booking-label,
+.booking-textarea:focus + .booking-label {
+  transform: translateY(-100%);
+}
+
+.booking-input::placeholder,
+.booking-textarea::placeholder {
+  font-size: 10px;
+  color: var(--primary-white-color);
+}
+
+.booking-textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.booking-button {
+  color: var(--primary-white-color);
+}
 /* --------- CONTACTS SECTION --------- */
 .contacts {
   width: calc(50% - 15px);
@@ -871,7 +933,8 @@ body {
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 16px;
   text-align: center;
   color: var(--primary-black-color);
   margin-bottom: 30px;
@@ -964,13 +1027,50 @@ body {
 }
 
 .form-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  /* color: rgba(117, 117, 117, 0.5); */
+  color: red;
+  font-size: 12px;
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--primary-black-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: var(--primary-orange-color);
 }
 
 .form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.form-checkbox-icon {
+  fill: none;
+  border: 2px solid var(--primary-gray-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:checked + .form-checkbox-icon {
+  background-color: var(--primary-orange-color);
+  border-color: var(--primary-orange-color);
+  fill: var(--primary-white-color);
 }
 
 .form-terms {
+  color: var(--primary-orange-color);
 }
 
 .button-center {
