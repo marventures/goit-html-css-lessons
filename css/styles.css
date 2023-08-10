@@ -694,6 +694,7 @@ body {
 
 .booking-title {
   color: var(--primary-white-color);
+  margin-bottom: 40px;
 }
 
 /* --------- CONTACTS SECTION --------- */
