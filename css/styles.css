@@ -170,6 +170,7 @@ body {
 
 .header-logo {
   margin-right: 130px;
+  background-color: var(--primary-white-color);
 }
 
 .header-list {
