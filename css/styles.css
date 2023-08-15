@@ -29,6 +29,11 @@ ol {
 
 img {
   display: block;
+  /* width: 100% -> the image will take up the full width of its parent container */
+  width: 100%;
+  /* max-width: 100% -> ensures that the image will not exceed its original size */
+  max-width: 100%;
+  height: auto;
 }
 
 /* END OF CSS RESET */
@@ -40,12 +45,29 @@ body {
 /* General Styles */
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* border: 2px solid red; */
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+  }
 }
+
+/* @media screen and (min-width: 768px) {
+  .container{
+    width:768px;
+  }
+} */
 
 .visually-hidden {
   position: absolute;
@@ -61,8 +83,13 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /* remove bullet points in lists */
@@ -114,11 +141,16 @@ body {
   margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
-  font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.1px;
+
+  font-size: 28px;
+
+  @media screen and (min-width: 1158px) {
+    font-size: 42px;
+  }
 }
 
 /* 1. button - doesn't automatically inherit font-family*/
@@ -174,8 +206,12 @@ body {
 }
 
 .header-list {
-  display: flex;
-  gap: 30px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .header-item {
@@ -215,8 +251,13 @@ body {
 }
 
 .header-address {
-  margin-left: auto;
-  color: var(--primary-white-color);
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    color: var(--primary-white-color);
+  }
 }
 
 .header-address-link {
@@ -238,19 +279,27 @@ body {
 }
 
 .header-button {
-  margin-left: 40px;
-  margin-right: 40px;
+  display: none;
 
-  color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--primary-white-color);
+  }
 }
 
 /* HERO SECTION */
 .hero {
-  /* background-image: url(../images/hero-bg.jpg),
+  background-image: url(../images/hero-bg.jpg),
     linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 72% 100%; */
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: unset;
+  }
 }
 
 .hero-container {
@@ -258,11 +307,15 @@ body {
 }
 
 .hero-socials {
-  width: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 27px;
-  padding-bottom: 40px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
 }
 
 .hero-list {
@@ -301,13 +354,15 @@ body {
 
 .hero-wrap {
   flex-grow: 1;
-  padding: 272px 100px 208px;
+  padding: 272px 0px 208px;
 
-  background-image: url(../images/hero-bg.jpg),
-    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-bg.jpg),
+      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .hero-top-text {
@@ -317,11 +372,18 @@ body {
 .hero-title {
   color: var(--primary-white-color);
   font-family: "Raleway";
-  font-size: 72px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 3.6px;
+
+  text-align: center;
+  font-size: 36px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    text-align: left;
+  }
 }
 
 .hero-bottom-text {
@@ -556,12 +618,24 @@ body {
 .barbers-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1158px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .barbers-item {
-  width: calc(100% - 60px / 3);
-
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: calc((100% - 45px) / 4);
+  }
 }
 
 .barbers-item:hover,
@@ -664,10 +738,24 @@ body {
 
 .portfolio-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 1158px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .portfolio-item {
-  width: calc(100% - 90px / 4);
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media scree and (min-width: 1158px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 /* CONTACTS WRAP */
@@ -819,11 +907,24 @@ body {
 .test-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1158px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .test-item {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 90px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .test-link {
@@ -924,12 +1025,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 408px;
-  min-height: 584px;
+  min-width: 428px;
+
+  height: 100vh;
   background-color: var(--primary-white-color);
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 428px) {
+    height: auto;
+  }
 }
 
 .modal-title {
