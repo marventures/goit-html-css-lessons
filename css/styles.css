@@ -753,7 +753,7 @@ body {
     width: calc((100% - 30px) / 2);
   }
 
-  @media scree and (min-width: 1158px) {
+  @media screen and (min-width: 1158px) {
     width: calc((100% - 90px) / 4);
   }
 }
