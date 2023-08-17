@@ -72,5 +72,15 @@
     <symbol id="icon-checkbox" viewBox="0 0 32 32">
       <path d="m4.817 15.389-.169-.162-2.544 2.41 8.962 8.55L29.895 8.225l-2.527-2.411L11.066 21.35l-6.249-5.962z"/>
     </symbol>
+
+      <!-- Hamburger Menu Icons -->
+    <symbol id="icon-hamburger-open" viewBox="0 0 32 32">
+      <path d="M6.4 11.734V9.6h19.2v2.134H6.4zm0 5.332h19.2v-2.133H6.4v2.133zm0 5.334h19.2v-2.134H6.4V22.4z"/>
+    </symbol>
+
+    <symbol id="icon-hamburger-close" viewBox="0 0 32 32">
+      <path d="M23.734 10.304 22.23 8.8l-5.963 5.962L10.305 8.8l-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"/>
+    </symbol>
+
   </defs>
 </svg>

@@ -291,7 +291,7 @@ body {
 
 /* HERO SECTION */
 .hero {
-  background-image: url(../images/hero-bg.jpg),
+  background-image: url(../images/hero-bg-m.jpg),
     linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   background-repeat: no-repeat;
   background-position: right;
@@ -299,6 +299,45 @@ body {
 
   @media screen and (min-width: 768px) {
     background-image: unset;
+  }
+
+  /* Mobile 2x */
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero-bg-m@2x.jpg);
+  }
+
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-bg-t.jpg),
+      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Tablet 2x */
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-t@2x.jpg);
+    }
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1158px) {
+    background-image: url(../images/hero-bg-d.jpg),
+      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Desktop 2x */
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-d@2x.jpg);
+    }
   }
 }
 
@@ -355,14 +394,6 @@ body {
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 0px 208px;
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/hero-bg.jpg),
-      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 .hero-top-text {
@@ -1183,4 +1214,124 @@ body {
 .button-center {
   display: block;
   margin: auto;
+}
+
+/* Hamburger Menu Open */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: var(--primary-white-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+/* Hamburger Menu Navigations and Close Icon */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--primary-white-color);
+  z-index: 200;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+/* Mobile Navigation */
+
+.mob-menu-item {
+  margin-bottom: 32px;
+}
+
+.mob-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link.current {
+  color: var(--primary-orange-color);
+}
+
+.mob-address {
+  /* address doesn't inherit font style */
+  font-style: normal;
+  margin-bottom: 32px;
+}
+
+.mob-address-link {
+  /* Link tags doesn't inherit colors */
+  color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-address-link:hover,
+.mob-address-link:focus {
+  color: var(--primary-orange-color);
+}
+
+/* Mobile Socials */
+.mob-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mob-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: var(--primary-orange-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-social-link:hover,
+.mob-social-link:focus {
+  background-color: var(--primary-black-color);
+}
+
+.mob-social-icon {
+  fill: currentColor;
 }

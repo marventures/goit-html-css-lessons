@@ -65,6 +65,111 @@
         <button class="header-button button" type="button" data-modal-open>
           Book a Service
         </button>
+
+        <!-- Hamburger Menu Open -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger-open"></use>
+          </svg>
+        </button>
+
+        <!-- Hamburger Menu Close Icon and Navigations-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <!-- Hamburger Menu Close Icon-->
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-hamburger-close"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation -->
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >About</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Services and Prices</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Contacts Address -->
+          <div>
+            <address class="mob-address">
+              <a class="mob-address-link link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+            </address>
+            <button class="mob-button button" type="button" data-modal-open>
+              Book a Service
+            </button>
+          </div>
+
+          <!-- Mobile Socials -->
+          <ul class="mob-social-list list">
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -267,6 +372,10 @@
             <li class="barbers-item">
               <div class="barbers-cover-wrap">
                 <img
+                  srcset="
+                    ./images/barber-img-1.jpg    1x,
+                    ./images/barber-img-1@2x.jpg 2x
+                  "
                   src="./images/barber-img-1.jpg"
                   alt="barber image 1"
                   width="370"
@@ -343,12 +452,41 @@
             </li>
             <li class="barbers-item">
               <div class="barbers-cover-wrap">
-                <img
-                  src="./images/barber-img-2.jpg"
-                  alt="barber image 2"
-                  width="370"
-                  height="346"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/barber-img-2-d.jpg    1x,
+                      ./images/barber-img-2-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/barber-img-2-t.jpg    1x,
+                      ./images/barber-img-2-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/barber-img-2-m.jpg    1x,
+                      ./images/barber-img-2-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/barber-img-2-m.jpg"
+                    alt="Barber Image 2"
+                    width="418"
+                    height="346"
+                  />
+                </picture>
                 <p class="barbers-cover-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
                   excepturi sed. Aut inventore maxime repellat recusandae
@@ -786,5 +924,8 @@
 
     <!-- MODAL SCRIPT -->
     <script src="./js/modal.js"></script>
+
+    <!-- HAMBURGER MENU SCRIPT -->
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
