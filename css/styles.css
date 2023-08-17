@@ -243,7 +243,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -20px;
-  width: 100%;
+  width: 40px;
   height: 4px;
   border-radius: 2px;
   border: 2px solid var(--primary-orange-color);
