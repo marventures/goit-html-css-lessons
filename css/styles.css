@@ -49,17 +49,14 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   /* border: 2px solid red; */
-
-  @media screen and (min-width: 428px) {
-    width: 428px;
-  }
+  max-width: 428px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1158px) {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
@@ -1056,8 +1053,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 428px;
-
+  width: 100vw;
   height: 100vh;
   background-color: var(--primary-white-color);
 
@@ -1066,6 +1062,7 @@ body {
 
   @media screen and (min-width: 428px) {
     height: auto;
+    width: 408px;
   }
 }
 
